@@ -1,9 +1,13 @@
+import Informacion from "./components/Informacion";
+
 function App() {
   return (
-    <>
-    <h1>Prueba</h1>
-    </>
-  )
+    <section>
+      <h1>Proyecto de React</h1>
+      <Informacion></Informacion>
+      <Informacion/>
+    </section>
+  );
 }
 
-export default App
+export default App;
