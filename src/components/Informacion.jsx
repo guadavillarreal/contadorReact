@@ -1,10 +1,12 @@
-const Informacion = () => {
+//(props): indica que recibe un props declarado donde fue llamado
+const Informacion = (props) => {
   //aaqui va la logica del componente, codigo de js
   return (
     //puede ir un poco de logica
     //<> </>: fragmen: para poner dos porciones de codigos
     <>
-      <h2>Conceptos de React</h2>
+    {/*{props.comision} : indica que props quiero agregar ahi*/}
+      <h2>Conceptos de React {props.comision}</h2>
       <section>
         {/*aqui va todo el maquetado del componente*/}
         <p>
@@ -15,7 +17,7 @@ const Informacion = () => {
           lo que facilita la creación de interfaces de usuario reutilizables y
           modulares. Los componentes se definen como clases o funciones que
           encapsulan el código HTML, CSS y JavaScript necesario para renderizar
-          una parte de la interfaz de usuario.
+          una parte de la interfaz de usuario. <br/> comision: {props.anioActualProps}
         </p>
       </section>
     </>
