@@ -1,7 +1,8 @@
 const Informacion = () => {
-  //aaqui va la logica del componente
+  //aaqui va la logica del componente, codigo de js
   return (
     //puede ir un poco de logica
+    //<> </>: fragmen: para poner dos porciones de codigos
     <>
       <h2>Conceptos de React</h2>
       <section>
