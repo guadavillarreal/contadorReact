@@ -1,4 +1,5 @@
 {/*llamado a la hoja de componentes para poder utilizarlo*/}
+import Contador from "./components/Contador";
 import Informacion from "./components/Informacion";
 //link de bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,6 +13,7 @@ function App() {
     {/*   <Informacion></Informacion>*/}
       {/*llamado al componente */}
       <Informacion comision="c76i" anioActualProps={anioActual}/> 
+      <Contador/>{/*etiqueta simple*/}
     </section>
   );
 }
