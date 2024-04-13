@@ -1,5 +1,5 @@
 //(props): indica que recibe un props declarado donde fue llamado
-const Informacion = (props) => {
+const Informacion = ({comision, anioActualProps}) => {
   //aaqui va la logica del componente, codigo de js
   return (
     //puede ir un poco de logica
@@ -8,7 +8,7 @@ const Informacion = (props) => {
       {/*{props.comision} : indica que props quiero agregar ahi
         con props estructurados:const Informacion = (props) => {
         <h2>Conceptos de React {props.comision}</h2>*/}
-      <h2>Conceptos de React {props.comision}</h2>
+      <h2>Conceptos de React {comision}</h2>
       <section>
         {/*aqui va todo el maquetado del componente*/}
         <p>
@@ -20,7 +20,7 @@ const Informacion = (props) => {
           modulares. Los componentes se definen como clases o funciones que
           encapsulan el código HTML, CSS y JavaScript necesario para renderizar
           una parte de la interfaz de usuario. <br /> comision:{" "}
-          {props.anioActualProps}
+          {anioActualProps}
         </p>
       </section>
     </>
