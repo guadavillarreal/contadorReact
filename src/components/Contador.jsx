@@ -1,4 +1,5 @@
 {/*Para usar estado dentro del componente */}
+//import { useState } from "react"; : import de hoop
 import { useState } from "react";
 const Contador = () => {
     //*siempre aqui la logica de mi componente */
