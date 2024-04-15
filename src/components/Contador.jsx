@@ -26,6 +26,7 @@ const [numero, setNumero] = useState(10);
       >
         +1
       </button>
+      {/*todo:agreguen un btn para decrementaren -1el valos del state */}
     </article>
   );
 };
