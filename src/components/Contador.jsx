@@ -6,7 +6,7 @@ import { useState } from "react";
 const Contador = () => {
   //*siempre aqui la logica de mi componente */
   //numero nombre de mi estado ,setNumero nombre del estado/ useState inicializa cualquier tipo de dato
-const [numero, setNumero] = useState(10);
+  const [numero, setNumero] = useState(10);
   //  let numero = 10;
   //si creo funciones grandes la tengo que declarar aqui*/
 
@@ -19,14 +19,24 @@ const [numero, setNumero] = useState(10);
       <button
         className="btn btn-primary"
         onClick={() => {
-          {/*setNumero(numero+1); :setNumero indica que el componente va a cambiar;numero+1: que componente  y como*/}
-          setNumero(numero+1);
+          {
+            /*setNumero(numero+1); :setNumero indica que el componente va a cambiar;numero+1: que componente  y como*/
+          }
+          setNumero(numero + 1);
           // console.log(numero);
         }}
       >
         +1
       </button>
       {/*todo:agreguen un btn para decrementaren -1el valos del state */}
+      <button
+        className="btn btn-danger"
+        onClick={() => {
+          setNumero(numero - 1);
+        }}
+      >
+        -1
+      </button>
     </article>
   );
 };
