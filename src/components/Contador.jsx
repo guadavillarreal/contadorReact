@@ -1,12 +1,14 @@
-{/*Para usar estado dentro del componente */}
+{
+  /*Para usar estado dentro del componente */
+}
 //import { useState } from "react"; : import de hoop
 import { useState } from "react";
 const Contador = () => {
-    //*siempre aqui la logica de mi componente */
-    //numero nombre de mi estado ,setNumero nombre del estado/ useState inicializa cualquier tipo de dato
-    const[numero,setNumero] = useState(10)
-//  let numero = 10;
-   //si creo funciones grandes la tengo que declarar aqui*/
+  //*siempre aqui la logica de mi componente */
+  //numero nombre de mi estado ,setNumero nombre del estado/ useState inicializa cualquier tipo de dato
+const [numero, setNumero] = useState(10);
+  //  let numero = 10;
+  //si creo funciones grandes la tengo que declarar aqui*/
 
   return (
     <article className="text-center">
@@ -17,8 +19,9 @@ const Contador = () => {
       <button
         className="btn btn-primary"
         onClick={() => {
-          numero++;
-          console.log(numero);
+          {/*setNumero(numero+1); :setNumero indica que el componente va a cambiar;numero+1: que componente  y como*/}
+          setNumero(numero+1);
+          // console.log(numero);
         }}
       >
         +1

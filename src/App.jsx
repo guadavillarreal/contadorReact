@@ -11,7 +11,9 @@ function App() {
       <h1 className="display-3 text-center">Proyecto de React</h1>
       {/*llamado al componente, se los puede utilizar la canitdad de veces que deseemos */}
     {/*   <Informacion></Informacion>*/}
-      {/*llamado al componente */}
+      {/*</Informacion> :llamado al componente */}
+      {/* comision="c76i" anioActualProps={anioActual}/>: envio de props, solo en las string va con comillas las var con {} */}
+      {/* Los props son inmutables */}
       <Informacion comision="c76i" anioActualProps={anioActual}/> 
       <Contador/>{/*etiqueta simple*/}
     </section>
