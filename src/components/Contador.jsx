@@ -35,7 +35,7 @@ const Contador = () => {
           setNumero(numero - 1);
         }}
       >
-        -1
+         -1 
       </button>
     </article>
   );
